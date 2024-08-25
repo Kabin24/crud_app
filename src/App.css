@@ -1,0 +1,194 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+}
+
+.App {
+  width: 100%;
+  
+  background: #cdf0ac;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(168, 17, 17, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #410d0d;
+  margin-bottom:  20px;
+}
+
+.user-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.user-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-form input,
+.user-form select,
+.user-form button {
+  padding: 10px;
+  border-radius: 5px;
+  
+  border: 1px solid #0a0a0a;
+  font-size: 14px;
+}
+
+.user-form input:focus,
+.user-form select:focus,
+.user-form button:hover {
+  border-color: #1056a0;
+  outline: none;
+}
+
+.user-form button {
+  grid-column: span 2;
+  width: 150px;
+  background-color: #121313;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px  10px;
+ justify-self: center;
+}
+
+.user-form button:hover {
+  background-color: #630ee2;
+}
+
+.filter-sort {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.filter-sort input,
+.filter-sort select {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #060a0f;
+  font-size: 14px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  ;
+}
+
+th, td {
+  padding: 5px;
+  text-align: left;
+  border: 1px solid #000000;
+}
+
+th {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+th:hover {
+  background-color: #e9ecef;
+}
+
+td {
+  background-color: #ffffff;
+}
+
+td button {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #a72828;
+  color: white;
+}
+
+
+
+.user-form button {
+  grid-column: span 2;
+  width: 150px;
+  background-color: #121313;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  justify-self: center;
+}
+
+td button.edit {
+  background-color: #4CAF50; 
+  color: white;
+}
+
+td button.edit:hover {
+  background-color: #10b619; 
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 8px 16px;
+  margin: 0 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #030707;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button.active,
+.pagination button:hover {
+  background-color: #630ee2;
+}
+
+
+@media (max-width: 768px) {
+  .user-form {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-sort {
+    flex-direction: column;
+  }
+
+  table th, table td {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  td button {
+    margin-bottom: 5px;
+  }
+}
